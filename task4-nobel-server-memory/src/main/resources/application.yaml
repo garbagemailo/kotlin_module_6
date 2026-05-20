@@ -1,0 +1,11 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.example.nobelmemory.ApplicationKt.module
+jwt:
+  issuer: "nobel-memory-server"
+  audience: "nobel-memory-client"
+  realm: "nobel-prize-api"
+  secret: "super_secret_key_for_nobel_memory_server_12345"
